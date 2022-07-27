@@ -1,23 +1,36 @@
-body * {
-  font-family: "Raleway", Sans-serif;
+$primary: #008cf0;
+$secondary: #503380;
+$text: #333;
+$accent: #006bb7;
+$lightBlue: #c5e4fb;
+$background: #f5f5f5;
+$transparent: rgba(255, 255, 255, 0);
+
+body {
+  * {
+    font-family: "Raleway", Sans-serif;
+  }
 }
 
 h1,
 h2,
 h3 {
   font-weight: 700;
-  color: #503380;
+  color: $secondary;
 }
-
 h4,
 h5 {
-  color: #503380;
+  color: $secondary;
 }
+
+// .row {
+//   max-width: 90%;
+// }
 
 hr {
   border: 0;
   max-width: 90%;
-  border-top: 1px solid #008cf0;
+  border-top: 1px solid $primary;
   opacity: 0.55;
 }
 
@@ -25,17 +38,21 @@ hr {
   margin-top: 5px;
 }
 
-.btn:focus {
-  box-shadow: none;
+.btn {
+  &:focus {
+    box-shadow: none;
+  }
 }
 
 .btn-toggle {
-  color: #503380 !important;
+  color: $secondary !important;
   margin-top: 5px;
-}
-.btn-toggle:active, .btn-toggle:focus, .btn-toggle:hover {
-  outline: none;
-  background-color: #f5f5f5;
+  &:active,
+  &:focus,
+  &:hover {
+    outline: none;
+    background-color: $background;
+  }
 }
 
 .sidebar-container {
@@ -66,10 +83,8 @@ img {
 :target:before {
   content: "";
   display: block;
-  height: 65px;
-  /* fixed header height*/
-  margin: -65px 0 0;
-  /* negative fixed header height */
+  height: 65px; /* fixed header height*/
+  margin: -65px 0 0; /* negative fixed header height */
 }
 
 ul {
@@ -110,7 +125,7 @@ ul {
 .tt-suggestion.tt-cursor,
 .tt-suggestion:hover {
   color: #fff;
-  background-color: #008cf0;
+  background-color: $primary;
 }
 
 .tt-suggestion p {
@@ -118,26 +133,34 @@ ul {
 }
 
 a {
-  color: #008cf0;
+  color: $primary;
   text-decoration: none;
-}
-a:hover {
-  color: #006bb7;
+  &:hover {
+    color: $accent;
+  }
 }
 
 #content {
   padding-top: 45px;
   max-width: 1100px;
+  .col-12 {
+    .section {
+      padding-top: 45px;
+      margin-top: 45px;
+      border-top: 2px solid $primary;
+      &:first-of-type {
+        margin-top: 0;
+        border-top: none;
+      }
+    }
+  }
 }
-#content .col-12 .section {
-  padding-top: 45px;
-  margin-top: 45px;
-  border-top: 2px solid #008cf0;
-}
-#content .col-12 .section:first-of-type {
-  margin-top: 0;
-  border-top: none;
-}
+// #content {
+//   position: absolute;
+//   margin-top: 65px;
+//   margin-left: 40px;
+//   max-width: 1100px;
+// }
 
 #container {
   margin-top: 60px;
@@ -157,58 +180,66 @@ a:hover {
   -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.075);
   -moz-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.075);
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.075);
-}
-#sidebar_container .btn-toggle {
-  width: 100%;
-}
-#sidebar_container .btn-toggle:active, #sidebar_container .btn-toggle:focus, #sidebar_container .btn-toggle:hover {
-  outline: none;
-  background-color: white;
-}
-#sidebar_container .btn-toggle-nav a:active, #sidebar_container .btn-toggle-nav a:focus, #sidebar_container .btn-toggle-nav a:hover {
-  outline: none;
-  background-color: white;
-  color: #006bb7;
+  .btn-toggle {
+    width: 100%;
+    &:active,
+    &:focus,
+    &:hover {
+      outline: none;
+      background-color: white;
+    }
+  }
+  .btn-toggle-nav {
+    a {
+      &:active,
+      &:focus,
+      &:hover {
+        outline: none;
+        background-color: white;
+        color: $accent;
+      }
+    }
+  }
 }
 
 .sub-navbar {
-  background-color: #c5e4fb;
+  background-color: $lightBlue;
   padding: 90px 0 30px;
 }
 
 .navbar {
-  background-color: #008cf0;
+  background-color: $primary;
   position: fixed;
   width: 100%;
   height: 60px;
   z-index: 1000;
   padding: 5px;
-}
-.navbar .container {
-  max-width: 1100px;
-}
-.navbar .container .col-left {
-  gap: 30px;
-}
-.navbar .container .col-right {
-  justify-content: flex-end;
-  gap: 30px;
-}
-.navbar .container .menu-opener {
-  color: white;
-  font-size: 40px;
-  height: 50px;
-  width: 50px;
-  text-align: center;
-  line-height: 45px;
-  border-radius: 4px;
-  transition: all ease 200ms;
-  cursor: pointer;
-}
-.navbar .container .menu-opener:hover {
-  transition: all ease 300ms;
-  background-color: white;
-  color: #006bb7;
+  .container {
+    max-width: 1100px;
+    .col-left {
+      gap: 30px;
+    }
+    .col-right {
+      justify-content: flex-end;
+      gap: 30px;
+    }
+    .menu-opener {
+      color: white;
+      font-size: 40px;
+      height: 50px;
+      width: 50px;
+      text-align: center;
+      line-height: 45px;
+      border-radius: 4px;
+      transition: all ease 200ms;
+      cursor: pointer;
+      &:hover {
+        transition: all ease 300ms;
+        background-color: white;
+        color: $accent;
+      }
+    }
+  }
 }
 
 .card-img-top {
@@ -219,16 +250,13 @@ a:hover {
 .card {
   width: 280px !important;
   height: 320px;
-  background-color: #f5f5f5;
+  background-color: $background;
 }
 
 .creator {
-  margin: 0 auto;
-  /* Added */
-  float: none;
-  /* Added */
-  margin-bottom: 10px;
-  /* Added */
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
 }
 
 #mci_profile_example {
@@ -245,16 +273,16 @@ a:hover {
 }
 
 .tabulator-header {
-  background-color: #008cf0 !important;
+  background-color: $primary !important;
   color: white !important;
 }
 
 .tabulator-col {
-  background-color: #008cf0 !important;
+  background-color: $primary !important;
 }
 
 .tabulator {
-  background-color: #008cf0 !important;
+  background-color: $primary !important;
 }
 
 .tabulator-arrow {
@@ -263,7 +291,7 @@ a:hover {
 
 .tabulator-footer {
   color: white !important;
-  background-color: #008cf0 !important;
+  background-color: $primary !important;
 }
 
 .tabulator-page {
@@ -281,7 +309,7 @@ a:hover {
 
 .vl {
   opacity: 0.2;
-  border-left: 3px solid #503380;
+  border-left: 3px solid $secondary;
   height: 60px;
   position: absolute;
   margin-left: -3px;
@@ -306,13 +334,19 @@ a:hover {
 
 .dropdown-menu.show {
   display: block;
-  background-color: #008cf0;
+  background-color: $primary;
 }
 
 #example_correlation_img {
-  border: solid #503380 1px;
+  border: solid $secondary 1px;
 }
 
 .card a {
   color: white;
 }
+
+// image-rendering: -moz-crisp-edges; /* Firefox */
+// image-rendering: -o-crisp-edges; /* Opera */
+// image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+// image-rendering: crisp-edges;
+// -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
