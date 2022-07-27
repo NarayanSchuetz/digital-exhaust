@@ -1,0 +1,767 @@
+{
+	"activity_fragmentation": {
+		"types": [
+			"Rhytmicity",
+			"Behavior Complexity"
+		],
+		"Sensors": [
+			"PIR"
+		]
+	},
+	"one_component_acrophase": {
+		"types": [
+			"Rhytmicity"
+		],
+		"Sensors": [
+			"PIR"
+		]
+	},
+	"multi_component_acrophase": {
+		"types": [
+			"Rhytmicity"
+		],
+		"Sensors": [
+			"PIR"
+		]
+	},
+	"one_component_mesor": {
+		"types": [
+			"Rhytmicity"
+		],
+		"Sensors": [
+			"PIR"
+		]
+	},
+	"multi_component_mesor": {
+		"types": [
+			"Rhytmicity"
+		],
+		"Sensors": [
+			"PIR"
+		]
+	},
+	"one_component_amplitude": {
+		"types": [
+			"Rhytmicity"
+		],
+		"Sensors": [
+			"PIR"
+		]
+	},
+	"multi_component_amplitude": {
+		"types": [
+			"Rhytmicity"
+		],
+		"Sensors": [
+			"PIR"
+		]
+	},
+	"multi_component_n": {
+		"types": [
+			"Rhytmicity"
+		],
+		"Sensors": [
+			"PIR"
+		]
+	},
+	"fridge_usage": {
+		"types": [
+			"Activities of Daily Living"
+		],
+		"Sensors": [
+			"Door"
+		]
+	},
+	"fridge_usage_5min_epochs": {
+		"types": [
+			"Activities of Daily Living"
+		],
+		"Sensors": [
+			"Door"
+		]
+	},
+	"outing_count": {
+		"types": [
+			"Social Activities",
+			"Physical Activity"
+		],
+		"Sensors": [
+			"PIR",
+			"Door"
+		]
+	},
+	"outing_duration": {
+		"types": [
+			"Social Activities",
+			"Physical Activity"
+		],
+		"Sensors": [
+			"PIR",
+			"Door"
+		]
+	},
+	"visit_score": {
+		"types": [
+			"Social Activities"
+		],
+		"Sensors": [
+			"PIR",
+			"Door"
+		]
+	},
+	"number_entrance_door_events": {
+		"types": [
+			"Social Activities",
+			"Activities of Daily Living"
+		],
+		"Sensors": [
+			"PIR"
+		]
+	},
+	"entrance_door_tod": {
+		"types": [
+			"Activities of Daily Living",
+			"Social Activities"
+		],
+		"Sensors": [
+			"PIR"
+		]
+	},
+	"fridge_door_tod": {
+		"types": [
+			"Activities of Daily Living"
+		],
+		"Sensors": [
+			"PIR"
+		]
+	},
+	"toilet_usage_number": {
+		"types": [
+			"Activities of Daily Living"
+		],
+		"Sensors": [
+			"PIR"
+		]
+	},
+	"toilet_usage_tod": {
+		"types": [
+			"Activities of Daily Living"
+		],
+		"Sensors": [
+			"PIR"
+		]
+	},
+	"intradaily_variability": {
+		"types": [
+			"Rhytmicity"
+		],
+		"Sensors": [
+			"PIR"
+		]
+	},
+	"intradaily_stability": {
+		"types": [
+			"Rhytmicity"
+		],
+		"Sensors": [
+			"PIR"
+		]
+	},
+	"spectral_entropy": {
+		"types": [
+			"Behavior Complexity"
+		],
+		"Sensors": [
+			"PIR"
+		]
+	},
+	"lfhf": {
+		"types": [
+			"Behavior Complexity"
+		],
+		"Sensors": [
+			"PIR"
+		]
+	},
+	"wavelet_variance": {
+		"types": [
+			"Behavior Complexity"
+		],
+		"Sensors": [
+			"PIR"
+		]
+	},
+	"norm_amplitude": {
+		"types": [
+			"Behavior Complexity",
+			"Rhytmicity"
+		],
+		"Sensors": [
+			"PIR"
+		]
+	},
+	"entropy_fridge": {
+		"types": [
+			"Behavior Complexity"
+		],
+		"Sensors": [
+			"Door"
+		]
+	},
+	"entropy_entrance": {
+		"types": [
+			"Behavior Complexity"
+		],
+		"Sensors": [
+			"Door"
+		]
+	},
+	"total_entropy": {
+		"types": [
+			"Behavior Complexity"
+		],
+		"Sensors": [
+			"PIR"
+		]
+	},
+	"pir_reconstruction_error": {
+		"types": [
+			"Behavior Complexity"
+		],
+		"Sensors": [
+			"PIR"
+		]
+	},
+	"activity_island_count": {
+		"types": [
+			"Physical Activity"
+		],
+		"Sensors": [
+			"PIR"
+		]
+	},
+	"activity_island_duration": {
+		"types": [
+			"Physical Activity"
+		],
+		"Sensors": [
+			"PIR"
+		]
+	},
+	"activity_counts": {
+		"types": [
+			"Physical Activity"
+		],
+		"Sensors": [
+			"PIR"
+		]
+	},
+	"raw_activity_sum_seconds": {
+		"types": [
+			"Physical Activity"
+		],
+		"Sensors": [
+			"PIR"
+		]
+	},
+	"transition_count": {
+		"types": [
+			"Physical Activity"
+		],
+		"Sensors": [
+			"PIR"
+		]
+	},
+	"mean_transition_duration": {
+		"types": [
+			"Physical Activity"
+		],
+		"Sensors": [
+			"PIR"
+		]
+	},
+	"mean_morning_transition_duration": {
+		"types": [
+			"Physical Activity"
+		],
+		"Sensors": [
+			"PIR"
+		]
+	},
+	"mean_evening_transition_duration": {
+		"types": [
+			"Physical Activity"
+		],
+		"Sensors": [
+			"PIR"
+		]
+	},
+	"morning_evening_transition_ratio": {
+		"types": [
+			"Physical Activity"
+		],
+		"Sensors": [
+			"PIR"
+		]
+	},
+	"deviation_from_even_ratio": {
+		"types": [
+			"Physical Activity"
+		],
+		"Sensors": [
+			"PIR"
+		]
+	},
+	"bed_hr": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_hr_q75_q25": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_hr_power": {
+		"types": [
+			"Sleep",
+			"Sleep Complexity"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_hr_spectral_entropy": {
+		"types": [
+			"Sleep Complexity"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_rr": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_rr_q75_q25": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_rr_power": {
+		"types": [
+			"Sleep",
+			"Sleep Complexity"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_rr_spectral_entropy": {
+		"types": [
+			"Sleep Complexity"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_act": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_act_power": {
+		"types": [
+			"Sleep",
+			"Sleep Complexity"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_act_spectral_entropy": {
+		"types": [
+			"Sleep Complexity"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_number_activity_islands": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_activity_island_duration": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"n_arousal_transitions": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"arousal_probability": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"percentage_active_in_bed": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_duration": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_duration_in_bed": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_bedexit_count": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_tossnturn_count": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_avg_hr": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_avg_rr": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_avg_act": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_duration_in_sleep": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_duration_awake": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_duration_sleep_onset": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_bedexit_duration": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_duration_in_rem": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_duration_in_light": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_duration_in_deep": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_hrv_lf": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_hrv_hf": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_awakenings": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_percentage_deep": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_percentage_light": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_percentage_rem": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_percentage_awake": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_sleep_efficiency": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_bedexit_duration_median": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_nocturia_count": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed",
+			"PIR"
+		]
+	},
+	"bed_awake_sleep_hr": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_awake_sleep_rr": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_awake_sleep_act": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_deep_sleep_hr": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_deep_sleep_rr": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_deep_sleep_act": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_light_sleep_hr": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_light_sleep_rr": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_light_sleep_act": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_rem_sleep_hr": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_rem_sleep_rr": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_rem_sleep_act": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"sleep_reconstruction_error": {
+		"types": [
+			"Sleep Complexity"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_heart_rate_1min_scale": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_respiration_rate_1min": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	},
+	"bed_activity_1min": {
+		"types": [
+			"Sleep"
+		],
+		"Sensors": [
+			"Bed"
+		]
+	}
+}
